@@ -249,7 +249,7 @@
     }
   }
   
-  section.landing .profile-area .outer-circle span {
+  section.landing .profile-area .outer-circle a {
     display: block;
     width: 4rem;
     height: 4rem;
@@ -270,19 +270,19 @@
     }
   }
   
-  section.landing .profile-area .outer-circle span:nth-child(1) {
+  section.landing .profile-area .outer-circle a:nth-child(1) {
     left: calc(50% - 2rem);
     top: -2rem;
   }
-  section.landing .profile-area .outer-circle span:nth-child(2) {
+  section.landing .profile-area .outer-circle a:nth-child(2) {
     top: calc(50% - 2rem);
     right: -2rem;
   }
-  section.landing .profile-area .outer-circle span:nth-child(3) {
+  section.landing .profile-area .outer-circle a:nth-child(3) {
     top: calc(50% - 2rem);
     left: -2rem;
   }
-  section.landing .profile-area .outer-circle span:nth-child(4) {
+  section.landing .profile-area .outer-circle a:nth-child(4) {
     left: calc(50% - 2rem);
     bottom: -2rem;
   }
