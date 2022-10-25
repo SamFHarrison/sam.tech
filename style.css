@@ -257,7 +257,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 0 1rem var(--color-primary-light); */
+    box-shadow: 0 0 1rem var(--color-primary-light);
     animation: anti-clockwise-rotation 30s linear infinite;
   }
   
@@ -315,6 +315,10 @@
   
   section.about .container .read-more-content {
     display: none;
+  }
+
+  section.about .container .read-more-content h4 {
+    padding: 1rem 0 0.8rem 0;
   }
   
   section.about .container .read-more {
@@ -530,7 +534,7 @@
   section.contact .overlay {
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.1); */
+    background: rgba(0, 0, 0, 0.7);
     padding: 10rem 0 7rem;
   }
   
@@ -544,7 +548,11 @@
   
   section.contact .container h1 {
     margin: 0%;
-    color: var(--color-background);
+    color: var(--color-accent);
+  }
+
+  section.contact .container p {
+    color: var(--color-text-body);
   }
   
   section.contact form {
@@ -554,11 +562,12 @@
   section.contact form input,
   section.contact form textarea {
     font: var(--font-body);
+    color: var(--color-accent);
     display: block;
     width: 100%;
     margin: 0.5rem 0;
     padding: 1.6rem;
-    border: 1px solid var(--color-background);
+    border: 1px solid var(--color-primary);
     background: transparent;
     transition: var(--transition);
   }
@@ -575,7 +584,7 @@
   
   section.contact form input::placeholder,
   section.contact form textarea::placeholder {
-    color: var(--color-background);
+    color: var(--color-primary);
   }
   
   section.contact form .btn {
@@ -745,6 +754,9 @@
     section.landing .container .outer-circle {
       width: 18rem;
       height: 18rem;
+    }
+    section.landing .container .outer-circle a {
+      box-shadow: none;
     }
     section.landing .container .outer-circle span i {
       font-size: 1.5rem;

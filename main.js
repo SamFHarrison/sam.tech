@@ -53,12 +53,43 @@ readMoreBtn.addEventListener('click', () => {
 
 
 // Show and hide skill items
+// const skillItems = document.querySelectorAll('section.skills .skill');
+// skillItems.forEach(skill => {
+//     skill.querySelector('.head').addEventListener('click', () => {
+//         skill.querySelector('.items').classList.toggle('show-items');
+//     })
+// })
+
 const skillItems = document.querySelectorAll('section.skills .skill');
 skillItems.forEach(skill => {
     skill.querySelector('.head').addEventListener('click', () => {
         skill.querySelector('.items').classList.toggle('show-items');
     })
 })
+
+const skillIcons = document.querySelectorAll('section.landing .outer-circle a');
+skillIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        if (icon.classList.contains('technologies')) {
+            document.querySelector('section.skills .technologies .items').classList.toggle('show-items');
+        } else if (icon.classList.contains('business-and-finance')) {
+            document.querySelector('section.skills .business-and-finance .items').classList.toggle('show-items');
+        } else if (icon.classList.contains('interests')) {
+            document.querySelector('section.skills .interests .items').classList.toggle('show-items');
+        } else if (icon.classList.contains('career')) {
+            document.querySelector('section.skills .career .items').classList.toggle('show-items');
+        }
+    })
+})
+
+
+
+
+
+
+
+
+
 
 
 
