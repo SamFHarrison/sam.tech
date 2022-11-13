@@ -395,6 +395,21 @@
   /* ========== SG Consultancy ======================================================= */
   section.sg-consultancy {
     background: var(--color-background-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.sg-consultancy h1 {
+    margin-bottom: 2rem;
+  }
+
+  section.sg-consultancy p {
+    width: 80%;
+    margin: 0 auto 4rem;
+    text-align: center;
+
   }
   
   section.sg-consultancy .container {
