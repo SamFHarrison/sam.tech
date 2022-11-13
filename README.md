@@ -1,4 +1,4 @@
-# sam.tech
+# softwaresam.tech
 My Personal Website
 
 13th November 2022
